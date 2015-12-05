@@ -1,7 +1,7 @@
 AutoSplitters for [LiveSplit](https://livesplit.org/)
 =====================
 
-Features
+Features (See individual folders for more details)
 --------
   * Can keep track of Game Time to get rid of loading times.
   * Can automatically start/stop/reset the timer.
