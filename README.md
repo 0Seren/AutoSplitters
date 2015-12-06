@@ -1,5 +1,6 @@
 AutoSplitters for [LiveSplit](https://livesplit.org/)
 =====================
+[How AutoSplitters Work](https://github.com/LiveSplit/LiveSplit/blob/master/Documentation/Auto-Splitters.md)
 
 Features (See individual folders for more details)
 --------
