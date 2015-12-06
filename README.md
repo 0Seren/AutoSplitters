@@ -10,11 +10,15 @@ Features (See individual folders for more details)
 
 Install
 -------
+![Activate AutoSplitter](/Resources/activate autosplitter.png?raw=true "Activate AutoSplitter")
+
 Starting with LiveSplit 1.4, you can download and install all autosplitters automatically from within the Splits Editor with just one click. Just type in the game name, and click Activate. This downloads the AutoSplitter to the Components folder.
 
 Configure
 ---------
 Open your Splits Editor and active the autosplitter. If this is not working, leave it deactivated and manually add it in the Layout Editor. You can configure the settings in whichever editor it has been enabled in.
+
+![Compare to Game Time](/Resources/compare to game time.png?raw=true "Compare to Game Time")
 
 After configuring everything you'll most likely want to turn on game time as primary timing, so that your splits will run off game time. You can do this by right-clicking LiveSplit and going to Compare Against -> Game Time.
 
