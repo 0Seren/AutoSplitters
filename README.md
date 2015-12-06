@@ -22,9 +22,6 @@ Open your Splits Editor and active the autosplitter. If this is not working, lea
 
 After configuring everything you'll most likely want to turn on game time as primary timing, so that your splits will run off game time. You can do this by right-clicking LiveSplit and going to Compare Against -> Game Time.
 
-#### Auto Split
-The default settings are to automatically reset, start, and split.
-
 #### Alternate Timing Method
 If you wish to show Real Time on your layout, download AlternateTimingMethod from the [LiveSplit Components page](http://livesplit.org/components/) or its own [Github page](https://github.com/Dalet/LiveSplit.AlternateTimingMethod/releases).
 
