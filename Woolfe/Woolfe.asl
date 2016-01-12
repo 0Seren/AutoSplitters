@@ -2,13 +2,13 @@ state("WoolfeGame")
 {
   bool start_load : "WoolfeGame.exe", 0x188ABE8;
   bool end_load : "WoolfeGame.exe", 0x01739510, 0x170, 0x100, 0x2F0, 0x5B0, 0x398;
-  //int igt : "WoolfeGame.exe", 0x0189A350, 0x0, 0x40, 0x2B0;
+  int igt : "WoolfeGame.exe", 0x0189ADB8, 0x18, 0x2B0;
   int values : "WoolfeGame.exe", 0x017E66D8, 0xB8;
 }
 
 init
 {
-  vars.in_load = false;
+  vars.in_load = true;
   vars.first_cutscene_value = 34960;
   vars.in_menu_value = 35010;
 }
@@ -26,12 +26,12 @@ start
 
 reset
 {
-  return (current.values != old.values && (current.values == vars.in_menu_value || current.values == vars.first_cutscene_value));
+  return (current.values != old.values && current.values == vars.in_menu_value);
 }
 
 split
 {
-  //return (old.igt == 0 && current.igt != old.igt);
+  return (old.igt == 0 && current.igt != old.igt);
 }
 
 isLoading
