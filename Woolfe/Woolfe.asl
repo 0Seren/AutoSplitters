@@ -31,7 +31,7 @@ reset
 
 split
 {
-  return (old.igt == 0 && current.igt != old.igt);
+  return (current.igt == 0 && current.igt != old.igt);
 }
 
 isLoading
