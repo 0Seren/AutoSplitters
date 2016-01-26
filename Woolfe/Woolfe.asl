@@ -15,23 +15,22 @@ init
 
 start
 {
-  bool ret = false;
-  vars.on_level = 0;
+  /*bool ret = false;
   if(current.values != old.values && current.values == vars.first_cutscene_value){
     vars.in_load = true;
     ret = true;
   }
-  return ret;
+  return ret;*/
 }
 
 reset
 {
-  return (current.values != old.values && current.values == vars.in_menu_value);
+  /*return (current.values != old.values && current.values == vars.in_menu_value);*/
 }
 
 split
 {
-  return (old.igt == 0 && current.igt != old.igt);
+  /*return (old.igt == 0 && current.igt != old.igt);*/
 }
 
 isLoading
