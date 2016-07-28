@@ -13,7 +13,9 @@ start
 
 split
 {
-    return (old.scene_counter != current.scene_counter) && (current.level_code != 184);
+    return ((old.scene_counter != current.scene_counter) && (current.level_code != 184))                            //Splits after Workshop, Sanctuary, Village, Chasms, and Star Haven
+    || ((current.story_state != old.story_state) && (current.story_state == 1030) && (current.level_code == 184))   //Splits After Credits
+    || ((current.story_state != old.story_state) && (current.story_state == 1032) && (current.level_code == 184));  //Final Split
 }
 
 isLoading
