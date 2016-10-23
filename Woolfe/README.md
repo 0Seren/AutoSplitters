@@ -22,6 +22,6 @@ If you wish to show Real Time on your layout, download AlternateTimingMethod fro
 
 Credits
 -------
-  * [0Seren](0Seren.github.io)
+  * [0Seren](https://0Seren.github.io)
   * [SuicideMachine](https://twitch.tv/SuicideMachine)
   * Based on work done by [Fatalis](https://twitch.tv/fatalis_).
