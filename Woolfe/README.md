@@ -6,9 +6,7 @@ LiveSplit.Woolfe is a [LiveSplit](https://livesplit.org/) script for Woolfe: The
 Features
 --------
   * Keeps track of Game Time to get rid of loading times.
-  * Auto start/stop/reset the timer.
-  * Splits at the end of each chapter except for the last (this is currently something I'm working on).
-  
+
 Install
 -------
 Starting with LiveSplit 1.4, you can download and install LiveSplit.Woolfe automatically from within the Splits Editor with just one click. Just type in "Woolfe: The Red Hood Diaries" and click Activate. This downloads LiveSplit.Woolfe to the Components folder.
@@ -19,14 +17,11 @@ Open your Splits Editor and active the autosplitter. If this is not working, lea
 
 After configuring everything you'll most likely want to turn on game time as primary timing, so that your splits will run off game time. You can do this by right-clicking LiveSplit and going to Compare Against -> Game Time.
 
-#### Auto Split
-The default settings are to automatically reset, start, and split. You can enable individual splits here.
-
 #### Alternate Timing Method
 If you wish to show Real Time on your layout, download AlternateTimingMethod from the [LiveSplit Components page](https://livesplit.org/components/) or its own [Github page](https://github.com/Dalet/LiveSplit.AlternateTimingMethod/releases).
 
 Credits
 -------
-  * [0Seren](https://twitch.tv/0Seren)
+  * [0Seren](0Seren.github.io)
   * [SuicideMachine](https://twitch.tv/SuicideMachine)
   * Based on work done by [Fatalis](https://twitch.tv/fatalis_).

@@ -28,5 +28,5 @@ If you wish to show Real Time on your layout, download AlternateTimingMethod fro
 
 Credits
 -------
-  * [0Seren](http://twitch.tv/0Seren)
+  * [0Seren](0Seren.github.io)
   * Based on work done by [Fatalis](http://twitch.tv/fatalis_).

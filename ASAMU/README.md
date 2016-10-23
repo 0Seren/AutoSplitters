@@ -6,7 +6,7 @@ LiveSplit.ASAMU is a [LiveSplit](http://livesplit.org/) script for A Story About
 Features
 --------
   * Removes Loads to calculate IGT to make times more fair across machines and runs.
-  * Auto reset the timer when loading into Workshop.
+  * Auto reset the timer when on the main menu.
   * Auto start the timer when the player gains control in Workshop.
   * Splits when changing chapters/levels and when losing control in Epilogue.
 
@@ -28,5 +28,5 @@ If you wish to show Real Time on your layout, download AlternateTimingMethod fro
 
 Credits
 -------
-  * [0Seren](http://twitch.tv/0Seren)
+  * [0Seren](0Seren.github.io)
   * Based on work done by [Fatalis](http://twitch.tv/fatalis_).
