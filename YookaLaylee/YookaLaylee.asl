@@ -9,7 +9,7 @@ isLoading{
 }
 
 start {
-    return !current.not_menu_fade_out && old.not_menu_fade_out;
+    return !current.not_menu_fade_out && old.not_menu_fade_out && current.loading;
 }
 
 init{
