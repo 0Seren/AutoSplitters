@@ -1,5 +1,5 @@
 state("ReCore") {
-    bool loading: "UnityPlayer.dll", 0x12D0C08;
+    bool loading: "ReCore.dll", 0x246E318;
 }
 isLoading {
     return current.loading;
