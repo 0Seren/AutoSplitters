@@ -18,7 +18,7 @@ start {
         vars.able_to_start = false;
     }
 
-    return ret;
+    return false;
 }
 
 init{
