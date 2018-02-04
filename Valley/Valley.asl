@@ -17,7 +17,7 @@ start{
     bool ret = vars.ableToStart && current.levelID == 4 && old.controlHelper == 0 && current.controlHelper > 32000 && current.controlHelper < 33000 && !current.loading;
 
     if(ret){
-        MessageBox.Show(current.controlHelper.ToString());
+        //MessageBox.Show(current.controlHelper.ToString());
         vars.ableToStart = false;
     }
     return ret;
