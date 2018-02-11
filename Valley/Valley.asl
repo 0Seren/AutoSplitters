@@ -4,6 +4,7 @@ state("Valley") {
     bool notEnded: "Valley.exe", 0x11916C0;
 
     int controlHelper: "Valley.exe", 0x129D3F0, 0x458, 0x100, 0xB0, 0x490;
+    int altControlHelper: "Valley.exe", 0x01281660, 0x168, 0x88, 0x100, 0xD0, 0x358;
 }
 
 reset{
@@ -20,15 +21,21 @@ reset{
 }
 
 start{
-    bool ret = current.levelID == 4 && !current.loading && old.controlHelper == 0 && current.controlHelper == 1;
+    bool ret = current.levelID == 4 && !current.loading && ((!settings["altctrl"] && old.controlHelper == 0 && current.controlHelper == 1) || (settings["altctrl"] && old.altControlHelper == 0 && current.altControlHelper == 1));
 
     if(settings["dbg"] && ret){
         print("[Valley AutoSplitter] -----------------------------");
         print("[Valley AutoSplitter] Start Block Positive Hit:");
         print("[Valley AutoSplitter] Current LevelID: " + current.levelID.ToString());
         print("[Valley AutoSplitter] Current Loading: " + current.loading.ToString());
-        print("[Valley AutoSplitter] Old controlHelper: " + old.controlHelper.ToString());
-        print("[Valley AutoSplitter] Current controlHelper: " + current.controlHelper.ToString());
+        if(!settings["altctrl"]){
+            print("[Valley AutoSplitter] Old controlHelper: " + old.controlHelper.ToString());
+            print("[Valley AutoSplitter] Current controlHelper: " + current.controlHelper.ToString());
+        } else {
+            print("[Valley AutoSplitter] Old controlHelper: " + old.altControlHelper.ToString());
+            print("[Valley AutoSplitter] Current controlHelper: " + current.altControlHelper.ToString());
+        }
+
     }
     return ret;
 }
@@ -62,4 +69,7 @@ isLoading{
 startup{
     settings.Add("dbg", false, "Enable Debug Mode");
     settings.SetToolTip("dbg", "When enabled, debug messages will be printed which can be viewed using DbgView filtering by \"[Valley AutoSplitter]\".");
+
+    settings.Add("altctrl", false, "Use Alt Start Pointer");
+    settings.SetToolTip("altctrl", "Switches Pointer Paths to Use");
 }
