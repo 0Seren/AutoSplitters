@@ -41,7 +41,7 @@ start{
 }
 
 split{
-    bool ret = (old.levelID < current.levelID && current.levelID > 4 && old.levelID != 0) || //Split Between Levels
+    bool ret = (old.levelID != current.levelID && old.levelID > 3 && current.levelID > 3) || //Split Between Levels
     (current.levelID == 12 && !current.loading && !current.notEnded && old.notEnded != current.notEnded ); //Split on Last Level
 
     if(settings["dbg"] && ret){
