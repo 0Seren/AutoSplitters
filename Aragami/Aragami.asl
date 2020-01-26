@@ -5,6 +5,7 @@ state("Aragami") {
 
 init {
     //Simple Address:
+    vars.pause = 1;
     vars.menu = 17;
     vars.chapter_1 = 117;
     vars.chapter_2 = 191;
@@ -25,7 +26,7 @@ init {
 }
 
 update {
-    if(old.level_code != 1) {
+    if(old.level_code != vars.pause && old.level_code != vars.menu && current.loading == 0) {
         vars.prev_level_code = old.level_code;
     }
 }
@@ -39,7 +40,7 @@ reset {
 }
 
 split {
-    return (old.level_code == 1 && current.level_code != 1 && current.level_code != vars.menu && current.level_code != vars.prev_level_code);
+    return (old.level_code == vars.pause && current.level_code != vars.pause && current.level_code != vars.menu && current.level_code != vars.prev_level_code);
 }
 
 isLoading {
